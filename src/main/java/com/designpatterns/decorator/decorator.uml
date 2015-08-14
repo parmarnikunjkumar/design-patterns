@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="292.75" y="134.0">com.designpatterns.decorator.condiments.Condiment</node>
+    <node x="623.0" y="281.0">com.designpatterns.decorator.condiments.Mocha</node>
+    <node x="1014.75" y="145.5">com.designpatterns.decorator.bevarages.HouseBlend</node>
+    <node x="778.75" y="145.5">com.designpatterns.decorator.bevarages.Decaf</node>
+    <node x="660.75" y="0.0">com.designpatterns.decorator.bevarages.Beverage</node>
+    <node x="0.0" y="281.0">com.designpatterns.decorator.condiments.Milk</node>
+    <node x="208.0" y="281.0">com.designpatterns.decorator.condiments.Whip</node>
+    <node x="1250.75" y="145.5">com.designpatterns.decorator.bevarages.DarkRoast</node>
+    <node x="542.75" y="145.5">com.designpatterns.decorator.bevarages.Espresso</node>
+    <node x="420.0" y="281.0">com.designpatterns.decorator.condiments.Soy</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.designpatterns.decorator.bevarages.Espresso" target="com.designpatterns.decorator.bevarages.Beverage">
+      <point x="0.0" y="-37.0" />
+      <point x="650.75" y="114.0" />
+      <point x="750.75" y="114.0" />
+      <point x="-18.0" y="37.0" />
+    </edge>
+    <edge source="com.designpatterns.decorator.condiments.Mocha" target="com.designpatterns.decorator.condiments.Condiment">
+      <point x="0.0" y="-48.5" />
+      <point x="724.0" y="251.0" />
+      <point x="494.0" y="251.0" />
+      <point x="86.25" y="48.5" />
+    </edge>
+    <edge source="com.designpatterns.decorator.condiments.Milk" target="com.designpatterns.decorator.condiments.Condiment">
+      <point x="0.0" y="-48.5" />
+      <point x="94.0" y="251.0" />
+      <point x="321.5" y="251.0" />
+      <point x="-86.25" y="48.5" />
+    </edge>
+    <edge source="com.designpatterns.decorator.bevarages.HouseBlend" target="com.designpatterns.decorator.bevarages.Beverage">
+      <point x="0.0" y="-37.0" />
+      <point x="1122.75" y="104.0" />
+      <point x="822.75" y="104.0" />
+      <point x="54.0" y="37.0" />
+    </edge>
+    <edge source="com.designpatterns.decorator.bevarages.DarkRoast" target="com.designpatterns.decorator.bevarages.Beverage">
+      <point x="0.0" y="-37.0" />
+      <point x="1358.75" y="94.0" />
+      <point x="858.75" y="94.0" />
+      <point x="90.0" y="37.0" />
+    </edge>
+    <edge source="com.designpatterns.decorator.condiments.Soy" target="com.designpatterns.decorator.condiments.Condiment">
+      <point x="0.0" y="-48.5" />
+      <point x="511.5" y="261.0" />
+      <point x="436.5" y="261.0" />
+      <point x="28.75" y="48.5" />
+    </edge>
+    <edge source="com.designpatterns.decorator.condiments.Whip" target="com.designpatterns.decorator.condiments.Condiment">
+      <point x="0.0" y="-48.5" />
+      <point x="304.0" y="261.0" />
+      <point x="379.0" y="261.0" />
+      <point x="-28.75" y="48.5" />
+    </edge>
+    <edge source="com.designpatterns.decorator.bevarages.Decaf" target="com.designpatterns.decorator.bevarages.Beverage">
+      <point x="0.0" y="-37.0" />
+      <point x="886.75" y="114.0" />
+      <point x="786.75" y="114.0" />
+      <point x="18.0" y="37.0" />
+    </edge>
+    <edge source="com.designpatterns.decorator.condiments.Condiment" target="com.designpatterns.decorator.bevarages.Beverage">
+      <point x="-57.5" y="-48.5" />
+      <point x="350.25" y="94.0" />
+      <point x="678.75" y="94.0" />
+      <point x="-90.0" y="37.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="449.5" y="200.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

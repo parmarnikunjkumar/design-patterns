@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement />
+  <nodes>
+    <node x="803.0" y="380.0">com.nodesignpattern.inheritance.HouseBlendWithMilk</node>
+    <node x="515.0" y="690.0">com.nodesignpattern.inheritance.DarkRoastWithMilkAndSoy</node>
+    <node x="441.0" y="619.0">com.nodesignpattern.inheritance.DarkRoast</node>
+    <node x="632.0" y="309.0">com.nodesignpattern.inheritance.HouseBlendWithMilkAndWhip</node>
+    <node x="377.0" y="879.0">com.nodesignpattern.inheritance.DarkRoastWithMilkAndMochaAndSoy</node>
+    <node x="548.0" y="548.0">com.nodesignpattern.inheritance.DarkRoastWithMilkAndMocha</node>
+    <node x="298.0" y="734.0">com.nodesignpattern.inheritance.DarkRoastWithMilk</node>
+    <node x="467.0" y="2.0">com.nodesignpattern.inheritance.DecafWithMilkAndMochaAndSoy</node>
+    <node x="934.0" y="451.0">com.nodesignpattern.inheritance.HouseBlendWithMilkAndMochaAndSoy</node>
+    <node x="808.0" y="211.0">com.nodesignpattern.inheritance.DecafWithMilkAndMocha</node>
+    <node x="891.0" y="632.0">com.nodesignpattern.inheritance.HouseBlendWithMilkAndSoy</node>
+    <node x="0.0" y="99.0">com.nodesignpattern.inheritance.EspressoWithMilkAndMochaAndSoyAndWhip</node>
+    <node x="756.0" y="477.0">com.nodesignpattern.inheritance.HouseBlend</node>
+    <node x="231.0" y="401.0">com.nodesignpattern.inheritance.EspressoWithMilkAndSoy</node>
+    <node x="701.0" y="761.0">com.nodesignpattern.inheritance.HouseBlendWithMilkAndMocha</node>
+    <node x="355.0" y="93.0">com.nodesignpattern.inheritance.EspressoWithMilkAndMocha</node>
+    <node x="501.0" y="214.0">com.nodesignpattern.inheritance.DecafWithMilk</node>
+    <node x="275.0" y="472.0">com.nodesignpattern.inheritance.DarkRoastWithMillkAndMochaAndSoyAndWhip</node>
+    <node x="667.0" y="203.0">com.nodesignpattern.inheritance.Decaf</node>
+    <node x="746.0" y="0.0">com.nodesignpattern.inheritance.DecafWithMilkAndMochaAndSoyAndWhip</node>
+    <node x="18.0" y="330.0">com.nodesignpattern.inheritance.EspressoWithMilkAndMochaAndSoy</node>
+    <node x="352.0" y="281.0">com.nodesignpattern.inheritance.Espresso</node>
+    <node x="540.0" y="397.0">com.nodesignpattern.inheritance.BeverageInh</node>
+    <node x="88.0" y="603.0">com.nodesignpattern.inheritance.DarkRoastWithMilkAndMochaAndWhip</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.nodesignpattern.inheritance.HouseBlendWithMilkAndMocha" target="com.nodesignpattern.inheritance.HouseBlend">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.EspressoWithMilkAndSoy" target="com.nodesignpattern.inheritance.Espresso">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.HouseBlendWithMilkAndMochaAndSoy" target="com.nodesignpattern.inheritance.HouseBlend">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DarkRoastWithMilkAndMochaAndWhip" target="com.nodesignpattern.inheritance.DarkRoast">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.HouseBlendWithMilk" target="com.nodesignpattern.inheritance.HouseBlend">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.HouseBlendWithMilkAndSoy" target="com.nodesignpattern.inheritance.HouseBlend">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DecafWithMilkAndMochaAndSoyAndWhip" target="com.nodesignpattern.inheritance.Decaf">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DarkRoastWithMilkAndMochaAndSoy" target="com.nodesignpattern.inheritance.DarkRoast">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.HouseBlend" target="com.nodesignpattern.inheritance.BeverageInh">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.EspressoWithMilkAndMocha" target="com.nodesignpattern.inheritance.Espresso">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DarkRoast" target="com.nodesignpattern.inheritance.BeverageInh">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.EspressoWithMilkAndMochaAndSoyAndWhip" target="com.nodesignpattern.inheritance.Espresso">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.Espresso" target="com.nodesignpattern.inheritance.BeverageInh">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.Decaf" target="com.nodesignpattern.inheritance.BeverageInh">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DecafWithMilkAndMochaAndSoy" target="com.nodesignpattern.inheritance.Decaf">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DarkRoastWithMilkAndSoy" target="com.nodesignpattern.inheritance.DarkRoast">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DecafWithMilkAndMocha" target="com.nodesignpattern.inheritance.Decaf">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DarkRoastWithMillkAndMochaAndSoyAndWhip" target="com.nodesignpattern.inheritance.DarkRoast">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DecafWithMilk" target="com.nodesignpattern.inheritance.Decaf">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DarkRoastWithMilk" target="com.nodesignpattern.inheritance.DarkRoast">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.DarkRoastWithMilkAndMocha" target="com.nodesignpattern.inheritance.DarkRoast">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.HouseBlendWithMilkAndWhip" target="com.nodesignpattern.inheritance.HouseBlend">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+    <edge source="com.nodesignpattern.inheritance.EspressoWithMilkAndMochaAndSoy" target="com.nodesignpattern.inheritance.Espresso">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.6264800861141012" x="605.5369415807559" y="1134.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
