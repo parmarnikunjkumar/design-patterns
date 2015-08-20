@@ -14,17 +14,34 @@ public class StataegyDemo {
 
     GribDataController controller = new GribDataController();
 
-    GribDataIdentifier identifier = new GribDataIdentifierBuilder().model("det-ecmwf-hres")
-                                                                    .initDate(DateTime.parse("2015-08-19T00:00:00.000Z"))
-                                                                    .forecastDate(DateTime.parse("2015-08-19T01:00:00.000Z"))
-                                                                    .parameter("temperature")
-                                                                    .layer("sfc")
-                                                                    .build();
-    GribData data = controller.getGribData(identifier, "linear");
+    CapiRequest request = CapiRequestBuilder.builder().modelId("det-ecmwf-hres")
+        .initDate(DateTime.parse("2015-08-19T00:00:00.000Z"))
+        .forecastDate(DateTime.parse("2015-08-19T00:00:00.000Z"))
+        .parameter("temperature")
+        .layer("sfc")
+        .build();
+    GribData data = controller.getGribData(request);
 
     System.out.println(data);
 
-    data = controller.getGribData(identifier,"cubic");
+
+    request = CapiRequestBuilder.builder().modelId("det-ecmwf-hres")
+        .initDate(DateTime.parse("2015-08-19T00:00:00.000Z"))
+        .forecastDate(DateTime.parse("2015-08-19T01:00:00.000Z"))
+        .parameter("temperature")
+        .layer("sfc")
+        .temporalInterploation("linear")
+        .build();
+    data = controller.getGribData(request);
+
+    request = CapiRequestBuilder.builder().modelId("det-ecmwf-hres")
+        .initDate(DateTime.parse("2015-08-19T00:00:00.000Z"))
+        .forecastDate(DateTime.parse("2015-08-19T01:00:00.000Z"))
+        .parameter("temperature")
+        .layer("sfc")
+        .temporalInterploation("cubic")
+        .build();
+    data = controller.getGribData(request);
 
     System.out.println(data);
 
