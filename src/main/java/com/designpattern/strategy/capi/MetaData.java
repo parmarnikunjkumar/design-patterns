@@ -15,8 +15,11 @@ public class MetaData {
   public String parameter;
   public String layer;
 
+
   @Override
   public String toString() {
-   return ToStringBuilder.reflectionToString(this);
+    ToStringBuilder builder = new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE);
+    builder.append(modelId).append(initDate).append(forecastDate).append(parameter).append(layer);
+    return  builder.toString();
   }
 }

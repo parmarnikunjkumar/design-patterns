@@ -1,9 +1,6 @@
 package com.designpattern.strategy.capi.service;
 
-import com.designpattern.strategy.capi.GribData;
-import com.designpattern.strategy.capi.GribDataIdentifier;
-import com.designpattern.strategy.capi.GribDataIdentifierBuilder;
-import com.designpattern.strategy.capi.MetaData;
+import com.designpattern.strategy.capi.*;
 import org.joda.time.DateTime;
 
 import java.util.ArrayList;
@@ -51,6 +48,7 @@ public class MockedGribDataService implements GribDataService {
   private static List<GribDataIdentifier> createDataIdentifiers() {
     List<GribDataIdentifier> result = new ArrayList();
 
+    result.add(new GribDataIdentifierBuilder().model("det-ecmwf-hres").initDate(DateTime.parse("2015-08-19T00:00:00.000Z")).forecastDate(DateTime.parse("2015-08-19T00:00:00.000Z")).parameter("temperature").layer("sfc").build());
     result.add(new GribDataIdentifierBuilder().model("det-ecmwf-hres").initDate(DateTime.parse("2015-08-19T00:00:00.000Z")).forecastDate(DateTime.parse("2015-08-19T03:00:00.000Z")).parameter("temperature").layer("sfc").build());
     result.add(new GribDataIdentifierBuilder().model("det-ecmwf-hres").initDate(DateTime.parse("2015-08-19T00:00:00.000Z")).forecastDate(DateTime.parse("2015-08-19T06:00:00.000Z")).parameter("temperature").layer("sfc").build());
     result.add(new GribDataIdentifierBuilder().model("det-ecmwf-hres").initDate(DateTime.parse("2015-08-19T00:00:00.000Z")).forecastDate(DateTime.parse("2015-08-19T09:00:00.000Z")).parameter("temperature").layer("sfc").build());

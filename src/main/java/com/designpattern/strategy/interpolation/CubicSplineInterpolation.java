@@ -12,6 +12,11 @@ public class CubicSplineInterpolation implements TemporalInterpolationStrategy {
   private GribIndexService gribIndexService;
   private GribDataService gribDataService;
 
+  public CubicSplineInterpolation(GribIndexService gribIndexService, GribDataService gribDataService) {
+    this.gribDataService= gribDataService;
+    this.gribIndexService = gribIndexService;
+  }
+
   public GribData interpolate(DateTime dateTime) {
     System.out.println("Doing Cubinc Spline Interpolation");
     DateTime knownInitDate = DateTime.parse("2015-08-19T00:00:00.000Z");

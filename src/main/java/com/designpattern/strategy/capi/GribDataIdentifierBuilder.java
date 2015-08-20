@@ -9,13 +9,15 @@ public class GribDataIdentifierBuilder {
 
   private String modelId;
 
-  private DateTime initDate;
+  private org.joda.time.DateTime initDate;
 
-  private  DateTime forecastDate;
+  private DateTime forecastDate;
 
   private String parameter;
 
   private String layer;
+
+  private String interpolation;
 
   public GribDataIdentifierBuilder(){
 
@@ -26,7 +28,7 @@ public class GribDataIdentifierBuilder {
     return this;
   }
 
-  public GribDataIdentifierBuilder initDate(DateTime initDate){
+  public GribDataIdentifierBuilder initDate(org.joda.time.DateTime initDate){
     this.initDate = initDate;
     return this;
   }

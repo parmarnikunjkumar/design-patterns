@@ -23,7 +23,7 @@ public class GribDataIdentifier {
 
   }
 
-  public GribDataIdentifier(String modelId, DateTime initDate, DateTime forecastDate, String parameter, String layer) {
+  public GribDataIdentifier(String modelId, org.joda.time.DateTime initDate, DateTime forecastDate, String parameter, String layer) {
     this.modelId = modelId;
     this.initDate = initDate;
     this.forecastDate = forecastDate;
@@ -42,7 +42,7 @@ public class GribDataIdentifier {
     return new EqualsBuilder().append(modelId, rhs.modelId)
                               .append(initDate,rhs.initDate)
                               .append(forecastDate,rhs.forecastDate)
-                              .append(parameter,rhs.parameter)
+                              .append(parameter, rhs.parameter)
                               .append(layer,rhs.layer)
                               .isEquals();
   }

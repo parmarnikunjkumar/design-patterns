@@ -14,11 +14,8 @@ public class LinearTemporalInterpolation implements TemporalInterpolationStrateg
 
   private GribDataService gribDataService;
 
-  public void setGribIndexService(GribIndexService gribIndexService) {
+  public LinearTemporalInterpolation(GribIndexService gribIndexService, GribDataService gribDataService) {
     this.gribIndexService = gribIndexService;
-  }
-
-  public void setGribDataService(GribDataService gribDataService) {
     this.gribDataService = gribDataService;
   }
 

@@ -14,14 +14,14 @@ import java.util.Map;
  */
 public class MockedGribIndexService implements GribIndexService {
 
-  private static Map<DateTime, List<GribDataIdentifier>> list;
+  private static Map<org.joda.time.DateTime, List<GribDataIdentifier>> list;
   static{
-    list = new HashMap<DateTime, List<GribDataIdentifier>>();
+    list = new HashMap<org.joda.time.DateTime, List<GribDataIdentifier>>();
     populateList();
   }
 
   private static void populateList() {
-    DateTime initDate = DateTime.parse("2015-08-19T00:00:00.000Z");
+    org.joda.time.DateTime initDate = org.joda.time.DateTime.parse("2015-08-19T00:00:00.000Z");
     list.put(initDate, new ArrayList<GribDataIdentifier>());
     list.get(initDate).add(new GribDataIdentifierBuilder().model("det-ecmwf-hres").initDate(DateTime.parse("2015-08-19T00:00:00.000Z")).forecastDate(DateTime.parse("2015-08-19T03:00:00.000Z")).parameter("temperature").layer("sfc").build());
     list.get(initDate).add(new GribDataIdentifierBuilder().model("det-ecmwf-hres").initDate(DateTime.parse("2015-08-19T00:00:00.000Z")).forecastDate(DateTime.parse("2015-08-19T06:00:00.000Z")).parameter("temperature").layer("sfc").build());
@@ -30,7 +30,7 @@ public class MockedGribIndexService implements GribIndexService {
     list.get(initDate).add(new GribDataIdentifierBuilder().model("det-ecmwf-hres").initDate(DateTime.parse("2015-08-19T00:00:00.000Z")).forecastDate(DateTime.parse("2015-08-19T15:00:00.000Z")).parameter("temperature").layer("sfc").build());
   }
 
-  public List<GribDataIdentifier> search(DateTime initDate) {
+  public List<GribDataIdentifier> search(org.joda.time.DateTime initDate) {
     return list.get(initDate);
   }
 }

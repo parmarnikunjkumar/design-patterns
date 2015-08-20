@@ -13,6 +13,7 @@ public class GribData {
 
   @Override
   public String toString() {
-    return ToStringBuilder.reflectionToString(this);
+
+    return  new ToStringBuilder(this,ToStringStyle.SHORT_PREFIX_STYLE).append(metaData).append(data).toString();
   }
 }
